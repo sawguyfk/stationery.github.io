@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE it-delivery [     
+    <!ELEMENT it-delivery (deliverys*)>     
+    <!ELEMENT deliverys (ID, name, product, company, delivery-round, status)>          
+
+    <!ELEMENT ID (#PCDATA)>     
+    <!ELEMENT name (#PCDATA)>     
+    <!ELEMENT product (#PCDATA)>     
+    <!ELEMENT company (#PCDATA)>     
+    <!ELEMENT delivery-round (#PCDATA)>     
+    <!ELEMENT status (#PCDATA)>      
+
+    <!ENTITY not "ยังไม่จัดส่ง">     
+    <!ENTITY shipping "กำลังจัดส่ง">     
+    <!ENTITY completed "จัดส่งเรียบร้อย"> 
+]>
+
+<it-delivery>
+    <deliverys>
+        <ID>4001</ID>
+        <name>สมชาย ใสสะอาด</name>
+        <product>ปากกาตัดเส้น1.5</product>
+        <company>ไปรษณีย์ไทย</company>
+        <delivery-round>รอบเช้า</delivery-round>
+        <status>&shipping;</status>
+    </deliverys>
+    <deliverys>
+        <ID>4002</ID>
+        <name>สมหญิง บุญมี</name>
+        <product>พูกัน0.5</product>
+        <company>ไปรษณีย์ไทย</company>
+        <delivery-round>รอบเช้า</delivery-round>
+        <status>&shipping;</status>
+    </deliverys>
+    <deliverys>
+        <ID>4003</ID>
+        <name>พันนิดา ทองดี</name>
+        <product>สีน้ำ</product>
+        <company>Flash Express</company>
+        <delivery-round>รอบเช้า</delivery-round>
+        <status>&completed;</status>
+    </deliverys>
+    <deliverys>
+        <ID>4004</ID>
+        <name>อริสา จิตดี</name>
+        <product>พูกัน2.0</product>
+        <company>Shopee Express</company>
+        <delivery-round>รอบบ่าย</delivery-round>
+        <status>&not;</status>
+    </deliverys>
+    <deliverys>
+        <ID>4005</ID>
+        <name>กษมา ทองมาก</name>
+        <product>ปากกาตัดเส้น0.5</product>
+        <company>Shopee Express</company>
+        <delivery-round>รอบเย็น</delivery-round>
+        <status>&shipping;</status>
+    </deliverys>
+</it-delivery>

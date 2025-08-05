@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE it-order [
+    <!ELEMENT it-order (orders*)>
+    <!ELEMENT orders (ID, name, product, amount, time, delivery-round)>
+    
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT product (#PCDATA)>
+    <!ELEMENT amount (#PCDATA)>
+    <!ELEMENT time (#PCDATA)>
+    <!ELEMENT delivery-round (#PCDATA)>
+
+    <!ENTITY morning "รอบเช้า">
+    <!ENTITY noon "รอบบ่าย">
+    <!ENTITY night "รอบเย็น">
+]>
+
+<it-order>
+    <orders>
+        <ID>3001</ID>
+        <name>สมชาย ใสสะอาด</name>
+        <product>ปากกาตัดเส้น1.5</product>
+        <amount>2 ชิ้น</amount>
+        <time>10:30 น.</time>
+        <delivery-round>&morning;</delivery-round>
+    </orders>
+    <orders>
+        <ID>3002</ID>
+        <name>สมหญิง บุญมี</name>
+        <product>พูกัน0.5</product>
+        <amount>3 ชิ้น</amount>
+        <time>8:00 น.</time>
+        <delivery-round>&morning;</delivery-round>
+    </orders>
+    <orders>
+        <ID>3003</ID>
+        <name>พันนิดา ทองดี</name>
+        <product>สีน้ำ</product>
+        <amount>4 ชิ้น</amount>
+        <time>9:21 น.</time>
+        <delivery-round>&morning;</delivery-round>
+    </orders>
+    <orders>
+        <ID>3004</ID>
+        <name>อริสา จิตดี</name>
+        <product>พูกัน2.0</product>
+        <amount>5 ชิ้น</amount>
+        <time>14:25 น.</time>
+        <delivery-round>&noon;</delivery-round>
+    </orders>
+    <orders>
+        <ID>3005</ID>
+        <name>กษมา ทองมาก</name>
+        <product>ปากกาตัดเส้น0.5</product>
+        <amount>6 ชิ้น</amount>
+        <time>18:45 น.</time>
+        <delivery-round>&night;</delivery-round>
+    </orders>
+</it-order>

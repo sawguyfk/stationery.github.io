@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE it-product [
+    <!ELEMENT it-product (products)>
+    <!ELEMENT products (ID, product, detail, price, amount, category)>
+   
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT product (#PCDATA)>
+    <!ELEMENT detail (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT amount (#PCDATA)>
+    <!ELEMENT category (#PCDATA)>
+
+
+    <!ENTITY stationery "เครื่องเขียน">
+    <!ENTITY color "สี">
+]>
+
+
+<it-product>
+    <products>
+        <ID>1001</ID>
+        <product>ปากกาตัดเส้น1.5</product>
+        <detail>สีดำ</detail>
+        <price>35 บาท</price>
+        <amount>150 ชิ้น</amount>
+        <category>&stationery;</category>
+    </products>
+    <products>
+        <ID>1002</ID>
+        <product>ปากกาตัดเส้น0.5</product>
+        <detail>สีน้ำตาล</detail>
+        <price>35 บาท</price>
+        <amount>150 ชิ้น</amount>
+        <category>&stationery;</category>
+    </products>
+    <products>
+        <ID>1003</ID>
+        <product>พูกัน2.0</product>
+        <detail>ขนาดกลางหัวพูกัน</detail>
+        <price>49 บาท</price>
+        <amount>150 ชิ้น</amount>
+        <category>&stationery;</category>
+    </products>
+    <products>
+        <ID>1004</ID>
+        <product>พูกัน0.5</product>
+        <detail>ขนาดเล็กหัวพูกัน</detail>
+        <price>32 บาท</price>
+        <amount>150 ชิ้น</amount>
+        <category>&stationery;</category>
+    </products>
+    <products>
+        <ID>1005</ID>
+        <product>สีน้ำ</product>
+        <detail>มีทั้งหมด 14 สี</detail>
+        <price>120 บาท</price>
+        <amount>150 ชิ้น</amount>
+        <category>&color;</category>
+    </products>
+</it-product>
